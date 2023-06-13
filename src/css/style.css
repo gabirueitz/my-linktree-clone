@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Tsukimi+Rounded:wght@300;400;700&display=swap');
+
+:root {
+    --color1: #0f0c29;
+    --color2: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--color1);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    transform: translateY(45%);
+    height: 150px;
+}
+
+.card {
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    color: var(--color2);
+    background-color: rgba(255, 255, 255, .25);
+    width: 300px;
+    border-radius: 25px;
+}
+
+.border {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(to right, #42275a, #734b6d);
+    animation-name: topFadeOut;
+    animation-duration: 5s;
+}
+
+.profile-photo {
+    width: 145px;
+    border-radius: 50%;
+}
+
+figcaption {
+    color: var(--color2);
+    transform: translateY(-40%);
+}
+
+figcaption h1 {
+    font-family: 'Tsukimi Rounded', sans-serif;
+    font-size: 26px;
+}
+
+figcaption p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    margin-top: 8px;
+    animation-name: textFadeIn;
+    animation-duration: 5s;
+}
+
+ul {
+    width: 80%;
+    margin: 140px auto 30px auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+}
+
+a,
+a:visited {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color1);
+    background-color: var(--color2);
+    border-radius: 20px;
+    margin: auto;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a:hover {
+    color: var(--color2);
+    background-color: var(--color1);
+}
+
+.icon {
+    color: var(--color2);
+    background-color: var(--color1);
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    max-height: 40px;
+    padding: 8px 0;
+}
+
+.arrow {
+    color: var(--color2);
+    margin-right: 10px;
+}
